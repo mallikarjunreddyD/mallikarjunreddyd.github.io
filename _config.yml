@@ -1,0 +1,10 @@
+title: Mallikarjun Dorsala
+description: Academic | Blockchain Systems | Distributed Computing
+baseurl: ""
+url: "https://mallikarjunreddyd.github.io"
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true

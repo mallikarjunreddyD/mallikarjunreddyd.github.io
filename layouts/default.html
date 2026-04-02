@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  {% include header.html %}
+  {% include nav.html %}
+
+  <hr>
+
+  {{ content }}
+
+</div>
+
+</body>
+</html>
