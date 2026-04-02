@@ -180,3 +180,82 @@ hr {
 .research-vision {
   margin-top: 1.5rem;
 }
+
+.projects-page {
+  margin-top: 1rem;
+}
+
+.projects-intro {
+  margin-bottom: 1.25rem;
+}
+
+.project-card {
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: #fcfdff;
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.project-amount {
+  color: #0645ad;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.project-meta {
+  margin: 0.35rem 0 0.75rem;
+  color: #444;
+}
+
+.project-card p {
+  margin: 0.55rem 0 0;
+}
+
+.project-links {
+  margin-top: 0.9rem;
+}
+
+.contact-page {
+  margin-top: 1rem;
+}
+
+.contact-intro {
+  margin-bottom: 1.25rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card {
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: #fcfdff;
+}
+
+.contact-card h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.2rem;
+}
+
+.contact-card p {
+  margin: 0.45rem 0 0;
+}
