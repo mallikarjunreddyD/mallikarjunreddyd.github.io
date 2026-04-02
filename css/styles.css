@@ -89,3 +89,94 @@ hr {
   color: #fff;
   text-decoration: none;
 }
+
+.teaching-page {
+  margin-top: 1rem;
+}
+
+.teaching-intro {
+  margin-bottom: 1rem;
+}
+
+.teaching-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.teaching-card {
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: #fafcff;
+}
+
+.teaching-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.teaching-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.teaching-badge {
+  color: #0645ad;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.teaching-meta {
+  margin: 0.35rem 0 0.5rem;
+  color: #444;
+}
+
+.teaching-history {
+  margin: 0;
+}
+
+.research-page {
+  margin-top: 1rem;
+}
+
+.research-intro {
+  margin-bottom: 1.25rem;
+}
+
+.research-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.research-card {
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  background: #fcfdff;
+}
+
+.research-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.research-card h2,
+.research-vision h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.research-card p {
+  margin: 0.45rem 0 0;
+}
+
+.research-vision {
+  margin-top: 1.5rem;
+}
