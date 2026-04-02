@@ -3,6 +3,12 @@ description: Academic | Blockchain Systems | Distributed Computing
 baseurl: ""
 url: "https://mallikarjunreddyd.github.io"
 
+# Optional; leave blank to hide the link on the home page
+author:
+  github_username: mallikarjunreddyd
+  google_scholar: https://scholar.google.com/citations?user=Ru1f2rkAAAAJ
+  email: mallikarjunreddy.d@iiits.in
+
 markdown: kramdown
 
 collections:

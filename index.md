@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+{% assign a = site.author %}
+
 <table>
 <tr>
 <td width="70%">
@@ -13,26 +15,36 @@ federated learning, and decentralized architectures.
 My research focuses on building scalable, transparent, and trustless systems
 for next-generation digital infrastructure.
 
-**Research Interests:**
-- Blockchain Systems
-- Federated Learning
-- Decentralized Finance
-- Distributed Systems
+**Research interests**
 
-[Curriculum Vitae](/assets/cv.pdf) | [Google Scholar](#) | [GitHub](#) | [Email](mailto:your@email.com)
+- Blockchain systems
+- Federated learning
+- Decentralized finance
+- Distributed systems
+
+<p>
+  <a href="{{ site.baseurl }}/assets/cv.pdf">Curriculum Vitae</a>
+  {% if a.google_scholar %}
+  | <a href="{{ a.google_scholar }}">Google Scholar</a>
+  {% endif %}
+  | <a href="https://github.com/{{ a.github_username }}">GitHub</a>
+  {% if a.email %}
+  | <a href="mailto:{{ a.email }}">Email</a>
+  {% endif %}
+</p>
 
 </td>
 
-<td width="30%">
-<img src="/assets/profile.jpg" width="180">
+<td width="30%" valign="top">
+<img src="{{ site.baseurl }}/assets/profile.jpg" width="180" alt="Portrait of {{ site.title }}">
 </td>
 </tr>
 </table>
 
 ---
 
-## Recent Updates
+## Recent updates
 
-- Conducted Web3 Summer School and Solidity Bootcamp  
-- Developing XComb platform  
-- Working on blockchain-enabled federated learning  
+- Conducted Web3 Summer School and Solidity Bootcamp
+- Developing XComb platform
+- Working on blockchain-enabled federated learning
