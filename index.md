@@ -9,8 +9,7 @@ title: Home
 <tr>
 <td width="70%">
 
-I am an academic and researcher working in the areas of blockchain systems,
-federated learning, and decentralized architectures.
+I am an academic and researcher working in the areas of blockchain systems, zero-knowledge proofs, federated learning, and decentralized architectures.
 
 My research focuses on building scalable, transparent, and trustless systems
 for next-generation digital infrastructure.
@@ -18,6 +17,7 @@ for next-generation digital infrastructure.
 **Research interests**
 
 - Blockchain systems
+- Zero-knowledge proofs
 - Federated learning
 - Decentralized finance
 - Distributed systems
