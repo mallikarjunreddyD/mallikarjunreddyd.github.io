@@ -5,9 +5,9 @@ title: Home
 
 {% assign a = site.author %}
 
-<table>
+<table class="intro-table">
 <tr>
-<td width="70%" markdown="block">
+<td class="intro-copy" width="70%" markdown="block">
 
 I am an academic and researcher working in the areas of blockchain systems, zero-knowledge proofs, federated learning, and decentralized architectures.
 
@@ -35,8 +35,8 @@ for next-generation digital infrastructure.
 
 </td>
 
-<td width="30%" valign="top">
-<img src="{{ site.baseurl }}/assets/profile.jpg" width="180" alt="Portrait of {{ site.title }}">
+<td class="profile-cell" width="30%" valign="top">
+<img class="profile-photo" src="{{ site.baseurl }}/assets/profile.jpg" alt="Portrait of {{ site.title }}">
 </td>
 </tr>
 </table>

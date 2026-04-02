@@ -10,6 +10,30 @@ body {
   margin: auto;
 }
 
+.intro-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.intro-table .intro-copy {
+  padding-right: 1.25rem;
+  vertical-align: top;
+}
+
+.intro-table .profile-cell {
+  width: 30%;
+  vertical-align: top;
+  padding: 0;
+}
+
+.intro-table .profile-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .nav a {
   margin-right: 15px;
   text-decoration: none;
