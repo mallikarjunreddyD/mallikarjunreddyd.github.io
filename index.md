@@ -7,7 +7,7 @@ title: Home
 
 <table>
 <tr>
-<td width="70%">
+<td width="70%" markdown="block">
 
 I am an academic and researcher working in the areas of blockchain systems, zero-knowledge proofs, federated learning, and decentralized architectures.
 
