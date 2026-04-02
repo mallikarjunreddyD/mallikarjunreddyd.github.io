@@ -41,8 +41,6 @@ for next-generation digital infrastructure.
 </tr>
 </table>
 
-{% include landing-sections.html %}
-
 ---
 
 ## Recent updates

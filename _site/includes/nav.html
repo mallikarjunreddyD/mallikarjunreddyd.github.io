@@ -1,7 +1,8 @@
-<div class="nav">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  {% assign section_pages = site.pages | sort: "title" %}
-  {% for p in section_pages %}
-  <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+<nav class="nav" role="navigation" aria-label="Primary navigation">
+  <a class="nav-button" href="{{ '/' | relative_url }}">Home</a>
+  {% for p in site.pages %}
+    {% if p.url contains '/pages/' and p.title %}
+      <a class="nav-button" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    {% endif %}
   {% endfor %}
-</div>
+</nav>

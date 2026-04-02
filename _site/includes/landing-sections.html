@@ -1,9 +1,10 @@
 <nav class="landing-sections" aria-labelledby="site-sections-heading">
   <h2 id="site-sections-heading">On this site</h2>
-  <ul>
-    {% assign section_pages = site.pages | sort: "title" %}
-    {% for p in section_pages %}
-    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+  <div class="landing-buttons" role="navigation" aria-label="On this site links">
+    {% for p in site.pages %}
+      {% if p.url contains '/pages/' and p.title %}
+        <a class="landing-button" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+      {% endif %}
     {% endfor %}
-  </ul>
+  </div>
 </nav>

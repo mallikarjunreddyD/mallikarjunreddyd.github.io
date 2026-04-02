@@ -14,6 +14,6 @@ markdown: kramdown
 includes_dir: includes
 
 collections:
-  pages:
+  sections:
     output: true
     path: pages
