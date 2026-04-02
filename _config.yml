@@ -11,6 +11,9 @@ author:
 
 markdown: kramdown
 
+includes_dir: includes
+
 collections:
   pages:
     output: true
+    path: pages

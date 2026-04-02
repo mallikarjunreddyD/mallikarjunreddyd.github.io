@@ -47,3 +47,14 @@ body {
 hr {
   margin: 20px 0;
 }
+
+.landing-sections h2 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.landing-sections ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
