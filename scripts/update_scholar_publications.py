@@ -1,6 +1,5 @@
 import argparse
 import json
-import os
 import re
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -29,64 +28,57 @@ def extract_scholar_user_id(config_text: str) -> str | None:
     return None
 
 
-def bibtex_get_field(bibtex: str, field_name: str) -> str | None:
+def pub_to_publication(pub: dict) -> dict | None:
     """
-    Very small BibTeX field extractor for the specific format we get from `scholarly.bibtex(...)`.
-    Handles: field = { ... }  and field = " ... "
+    Convert `scholarly`'s filled publication object into our simplified schema.
+
+    In practice, `scholarly.fill(...)` in this environment provides most fields
+    inside `pub["bib"]` (a dict) such as:
+      - title
+      - pub_year
+      - author
+      - citation
+      - pages, volume, publisher ...
     """
-    # Try braces first
-    pattern_braces = rf"{re.escape(field_name)}\s*=\s*\{{\s*([^}}]+?)\s*\}}"
-    m = re.search(pattern_braces, bibtex, flags=re.IGNORECASE)
-    if m:
-        return m.group(1).strip()
+    bib = pub.get("bib")
+    if not isinstance(bib, dict):
+        return None
 
-    # Then double-quotes
-    pattern_quotes = rf'{re.escape(field_name)}\s*=\s*"\s*([^"]+?)\s*"'
-    m = re.search(pattern_quotes, bibtex, flags=re.IGNORECASE)
-    if m:
-        return m.group(1).strip()
-
-    return None
-
-
-def bibtex_to_publication(bibtex: str) -> dict:
-    entry_type_match = re.match(r"@(\w+)\s*\{", bibtex.strip())
-    entry_type = entry_type_match.group(1).lower() if entry_type_match else None
-
-    title = bibtex_get_field(bibtex, "title")
-    year_raw = bibtex_get_field(bibtex, "year")
+    title = bib.get("title") or pub.get("title")
+    pub_year = bib.get("pub_year")
     try:
-        year = int(year_raw) if year_raw else None
+        year = int(pub_year) if pub_year is not None else None
     except Exception:
         year = None
 
-    author_raw = bibtex_get_field(bibtex, "author")
-    # "Last, First and Last, First" -> "Last, First; Last, First"
+    authors_raw = bib.get("author")
     authors = None
-    if author_raw:
-        authors = author_raw.replace(" and ", "; ").replace("{", "").replace("}", "")
+    if authors_raw:
+        authors = (
+            str(authors_raw)
+            .replace("{", "")
+            .replace("}", "")
+            .replace(" and ", "; ")
+        )
 
-    journal = bibtex_get_field(bibtex, "journal")
-    booktitle = bibtex_get_field(bibtex, "booktitle")
-    venue = journal or booktitle
-    if venue:
+    # `citation` is usually already "Journal/Conference, volume/pages, year" (title is not repeated).
+    venue = bib.get("citation") or bib.get("journal") or bib.get("booktitle")
+
+    url = pub.get("pub_url") or pub.get("url")  # usually a Google Scholar "Cited by"/publication URL
+
+    if not title or year is None:
+        return None
+
+    if isinstance(venue, str):
         venue = venue.replace("{", "").replace("}", "")
-    if title:
-        title = title.replace("{", "").replace("}", "")
-
-    url = bibtex_get_field(bibtex, "url")
-    doi = bibtex_get_field(bibtex, "doi")
-    if not url and doi:
-        url = f"https://doi.org/{doi}"
 
     return {
-        "type": entry_type,
+        "type": pub.get("source"),
         "year": year,
-        "title": title,
+        "title": str(title).replace("{", "").replace("}", ""),
         "authors": authors,
         "venue": venue,
         "url": url,
-        "bibtex": bibtex,  # keep for debugging/extension; not rendered
     }
 
 
@@ -136,11 +128,9 @@ def main() -> None:
     publications = []
     for pub in pubs[: args.max]:
         try:
-            pub = scholarly.fill(pub)
-            # `scholarly` provides BibTeX for each publication.
-            bibtex = scholarly.bibtex(pub)
-            parsed = bibtex_to_publication(bibtex)
-            if parsed.get("year") is not None and parsed.get("title"):
+            filled = scholarly.fill(pub)
+            parsed = pub_to_publication(filled)
+            if parsed:
                 publications.append(parsed)
         except Exception:
             # Skip items that can't be parsed; Scholar data can have edge cases.

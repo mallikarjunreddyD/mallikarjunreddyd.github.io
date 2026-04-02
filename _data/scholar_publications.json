@@ -1,1 +1,119 @@
-[]
+[
+  {
+    "year": 2026,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Privacy-Preserving Federated Learning for Retinal Disease Diagnosis using Paillier Homomorphic Encryption with Multiple Encryption Keys",
+        "authors": "Avirneni Veda Sri; Mahesh Kumar Morampudi; Mallikarjun Reddy Dorsala; Sriramulu Bojjagani; Muhammad Khurram Khan",
+        "venue": "IEEE Access, 2026",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11395977/"
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Embracing Blockchain Technologies in Outsourcing Practices: Cases and Studies in Operations Research and Management Science",
+        "authors": "Mallikarjun Reddy Dorsala; Manoj Kumar Somesula; Mahesh Kumar Morampudi",
+        "venue": "Outsourcing: Cases and Studies in Using Operations Research and Management …, 2025",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-95393-4_4"
+      },
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "T-REITs: A Regulatory Compliant Blockchain-based Framework for Tokenization of Real Estate Investment Trusts",
+        "authors": "Abhishek Kishor Bhagat; Mallikarjun Reddy Dorsala",
+        "venue": "2025 IEEE International Conference on Blockchain and Cryptocurrency (ICBC), 1-7, 2025",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11185105/"
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Inf-TESLA++: A Blockchain-assisted Continuous Authentication Protocol for Broadcast Communication in Resource-Constrained Devices",
+        "authors": "Mallikarjun Reddy Dorsala; Charugundla Lakshmi Nishitha; Pendem Sathwik; Gattu Srilekha; Mahesh Kumar Morampudi",
+        "venue": "2024 IEEE International Conference on Advanced Networks and …, 2024",
+        "url": "https://ieeexplore.ieee.org/abstract/document/10898563/"
+      },
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Service caching and user association in cache enabled multi-UAV assisted MEN for latency-sensitive applications",
+        "authors": "Manoj Kumar Somesula; Mekala Ratna Raju; Mallikarjun Reddy Dorsala; Banalaxmi Brahma; Sai Krishna Mothku",
+        "venue": "Computers and Electrical Engineering 119, 109606, 2024",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045790624005330"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Blockchain-based Cloud Data Deduplication Scheme with Fair Incentives",
+        "authors": "Mallikarjun Reddy Dorsala; VN Sastry; Sudhakar Chapram",
+        "venue": "arXiv preprint arXiv:2307.12052, 2023",
+        "url": "https://arxiv.org/abs/2307.12052"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Fair payments for privacy-preserving aggregation of mobile crowdsensing data",
+        "authors": "Mallikarjun Reddy Dorsala; VN Sastry; Sudhakar Chapram",
+        "venue": "Journal of King Saud University-Computer and Information Sciences 34 (8 …, 2022",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1319157821000112"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Blockchain-based Fair Payment Protocols for Cloud Services",
+        "authors": "Dorsala Mallikarjun Reddy",
+        "venue": null,
+        "url": "http://ir.library.nitw.ac.in:8080/jspui/bitstream/123456789/449/1/Thesis_716042.pdf"
+      },
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Blockchain-based solutions for cloud computing: A survey",
+        "authors": "Mallikarjun Reddy Dorsala; VN Sastry; Sudhakar Chapram",
+        "venue": "Journal of Network and Computer Applications 196, 103246, 2021",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1084804521002447"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Fair payments for verifiable cloud services using smart contracts",
+        "authors": "Mallikarjun Reddy Dorsala; VN Sastry; Sudhakar Chapram",
+        "venue": "Computers & Security 90, 101712, 2020",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0167404819302494"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "publications": [
+      {
+        "type": "AUTHOR_PUBLICATION_ENTRY",
+        "title": "Fair protocols for verifiable computations using bitcoin and ethereum",
+        "authors": "Mallikarjun Reddy Dorsala; VN Sastry",
+        "venue": "2018 IEEE 11th International Conference on Cloud Computing (CLOUD), 786-793, 2018",
+        "url": "https://ieeexplore.ieee.org/abstract/document/8457876/"
+      }
+    ]
+  }
+]

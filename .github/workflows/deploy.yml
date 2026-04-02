@@ -34,9 +34,21 @@ jobs:
           pip install scholarly
 
       - name: Generate Google Scholar publications JSON
-        continue-on-error: true
         run: |
           python3 scripts/update_scholar_publications.py
+
+      - name: Verify publications JSON is non-empty
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('_data/scholar_publications.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          groups = len(data) if isinstance(data, list) else 0
+          print('year_groups:', groups)
+          if groups == 0:
+            raise SystemExit('No publications extracted; check Google Scholar access.')
+          PY
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

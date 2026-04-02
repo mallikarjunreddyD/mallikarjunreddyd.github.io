@@ -1,0 +1,17 @@
+_site/
+.jekyll-cache/
+
+# Python / venv
+.venv/
+__pycache__/
+*.pyc
+scripts/__pycache__/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Scholar auto-generated content
+# (Workflow regenerates this during GitHub Pages builds.)
+_data/scholar_publications.json
