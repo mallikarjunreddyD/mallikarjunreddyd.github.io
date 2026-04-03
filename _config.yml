@@ -1,12 +1,16 @@
-title: Mallikarjun Reddy Dorsala
-description: Academic | Blockchain Systems | Distributed Computing
+title: Dorsala Mallikarjun Reddy
+description: Assistant Professor at IIIT Sri City working on blockchain systems, distributed computing, zero-knowledge proofs, and federated learning.
 baseurl: ""
 url: "https://mallikarjunreddyd.github.io"
 
 # Optional; leave blank to hide the link on the home page
 author:
+  name: Dorsala Mallikarjun Reddy
+  job_title: Assistant Professor
+  affiliation: Indian Institute of Information Technology Sri City
   github_username: mallikarjunreddyd
   google_scholar: https://scholar.google.com/citations?user=Ru1f2rkAAAAJ
+  linkedin: https://www.linkedin.com/in/mallikarjun-reddy-dorsala-12533663/
   email: mallikarjunreddy.d@iiits.in
 
 markdown: kramdown

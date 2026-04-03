@@ -1,10 +1,12 @@
 <nav class="landing-sections" aria-labelledby="site-sections-heading">
   <h2 id="site-sections-heading">On this site</h2>
   <div class="landing-buttons" role="navigation" aria-label="On this site links">
-    {% for p in site.pages %}
-      {% if p.url contains '/pages/' and p.title %}
-        <a class="landing-button" href="{{ p.url | relative_url }}">{{ p.title }}</a>
-      {% endif %}
-    {% endfor %}
+    <a class="landing-button" href="{{ '/pages/profile.html' | relative_url }}">Profile</a>
+    <a class="landing-button" href="{{ '/pages/teaching.html' | relative_url }}">Teaching</a>
+    <a class="landing-button" href="{{ '/pages/research.html' | relative_url }}">Research</a>
+    <a class="landing-button" href="{{ '/pages/publications.html' | relative_url }}">Publications</a>
+    <a class="landing-button" href="{{ '/pages/projects.html' | relative_url }}">Projects</a>
+    <a class="landing-button" href="{{ '/pages/events.html' | relative_url }}">Events</a>
+    <a class="landing-button" href="{{ '/pages/contact.html' | relative_url }}">Contact</a>
   </div>
 </nav>

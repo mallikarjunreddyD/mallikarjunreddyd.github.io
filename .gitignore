@@ -15,3 +15,5 @@ scripts/__pycache__/
 # Scholar auto-generated content
 # (Workflow regenerates this during GitHub Pages builds.)
 _data/scholar_publications.json
+
+.codex

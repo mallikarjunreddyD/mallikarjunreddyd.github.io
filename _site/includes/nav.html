@@ -1,8 +1,10 @@
 <nav class="nav" role="navigation" aria-label="Primary navigation">
   <a class="nav-button" href="{{ '/' | relative_url }}">Home</a>
-  {% for p in site.pages %}
-    {% if p.url contains '/pages/' and p.title %}
-      <a class="nav-button" href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    {% endif %}
-  {% endfor %}
+  <a class="nav-button" href="{{ '/pages/profile.html' | relative_url }}">Profile</a>
+  <a class="nav-button" href="{{ '/pages/teaching.html' | relative_url }}">Teaching</a>
+  <a class="nav-button" href="{{ '/pages/research.html' | relative_url }}">Research</a>
+  <a class="nav-button" href="{{ '/pages/publications.html' | relative_url }}">Publications</a>
+  <a class="nav-button" href="{{ '/pages/projects.html' | relative_url }}">Projects</a>
+  <a class="nav-button" href="{{ '/pages/events.html' | relative_url }}">Events</a>
+  <a class="nav-button" href="{{ '/pages/contact.html' | relative_url }}">Contact</a>
 </nav>
