@@ -157,6 +157,13 @@ hr {
   gap: 1rem;
 }
 
+.home-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
 .home-hero-photo {
   width: 100%;
   max-width: 360px;
@@ -166,9 +173,7 @@ hr {
   box-shadow: 0 20px 42px var(--shadow-strong);
 }
 
-.home-hero-card,
-.home-highlight-card,
-.home-update-card {
+.home-hero-card {
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(180deg, #fffefb 0%, var(--stone-1) 100%);
@@ -179,8 +184,7 @@ hr {
   padding: 1rem 1.1rem;
 }
 
-.home-hero-card h3,
-.home-update-card h3 {
+.home-hero-card h3 {
   margin: 0;
   font-size: 1.05rem;
   color: var(--ink);
@@ -193,24 +197,6 @@ hr {
 
 .home-interest-list li + li {
   margin-top: 0.35rem;
-}
-
-.home-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.6rem;
-}
-
-.home-highlight-card {
-  padding: 1rem 1.05rem;
-}
-
-.home-highlight-card strong {
-  display: block;
-  margin-bottom: 0.35rem;
-  color: var(--forest);
-  font-size: 1.05rem;
 }
 
 .landing-sections h2 {
@@ -244,30 +230,6 @@ hr {
   color: var(--stone-0);
   text-decoration: none;
   transform: translateY(-1px);
-}
-
-.home-updates {
-  margin-top: 1.8rem;
-}
-
-.home-updates h2 {
-  margin: 0 0 0.8rem;
-  color: var(--ink);
-}
-
-.home-updates-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.home-update-card {
-  padding: 1rem 1.05rem;
-}
-
-.home-update-card p {
-  margin: 0.5rem 0 0;
-  color: var(--ink-soft);
 }
 
 .teaching-page {
@@ -654,8 +616,7 @@ hr {
   }
 
   .home-hero,
-  .home-highlights,
-  .home-updates-grid,
+  .home-bottom-grid,
   .teaching-list,
   .research-list,
   .contact-grid,

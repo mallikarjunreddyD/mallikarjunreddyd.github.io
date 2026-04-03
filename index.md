@@ -30,51 +30,35 @@ description: Official academic website of Dorsala Mallikarjun Reddy, Assistant P
 
   <aside class="home-hero-panel">
     <img class="home-hero-photo" src="{{ site.baseurl }}/assets/profile.jpg" alt="Portrait of {{ site.title }}">
-
-    <div class="home-hero-card">
-      <h3>Research Interests</h3>
-      <ul class="home-interest-list">
-        <li>Blockchain systems</li>
-        <li>Zero-knowledge proofs</li>
-        <li>Federated learning</li>
-        <li>Decentralized finance</li>
-        <li>Distributed systems</li>
-      </ul>
-    </div>
   </aside>
 </section>
 
-<section class="home-highlights" aria-label="Highlights">
-  <div class="home-highlight-card">
-    <strong>Academic</strong>
-    <span>Assistant Professor at IIIT Sri City with active teaching, mentoring, and institutional leadership roles.</span>
+<section class="home-bottom-grid">
+  <div class="home-hero-card">
+    <h3>Recent Updates</h3>
+    <ul class="home-interest-list">
+      <li>Conducted the Agentica 2.0, IdeaVerse'26, and Cosmix hackathons as part of Abhisarga 2026.</li>
+      <li>Received the Best Paper Award at the 2024 IEEE International Conference on Advanced Networks and Telecommunications Systems.</li>
+    </ul>
   </div>
-  <div class="home-highlight-card">
-    <strong>Research</strong>
-    <span>Focused on blockchain networks, verifiable computation, federated systems, and secure distributed infrastructure.</span>
-  </div>
-  <div class="home-highlight-card">
-    <strong>Practice</strong>
-    <span>Industry experience in blockchain architecture and sustained involvement in workshops, hackathons, and applied innovation.</span>
-  </div>
-</section>
 
-{% include landing-sections.html %}
+  <div class="home-hero-card">
+    <h3>Research Interests</h3>
+    <ul class="home-interest-list">
+      <li>Blockchain systems</li>
+      <li>Zero-knowledge proofs</li>
+      <li>Federated learning</li>
+      <li>Decentralized finance</li>
+      <li>Distributed systems</li>
+    </ul>
+  </div>
 
-<section class="home-updates">
-  <h2>Recent Updates</h2>
-  <div class="home-updates-grid">
-    <article class="home-update-card">
-      <h3>Web3 Training</h3>
-      <p>Conducted Web3 Summer School and Solidity Bootcamp initiatives with a focus on hands-on learning and ecosystem building.</p>
-    </article>
-    <article class="home-update-card">
-      <h3>Current Development</h3>
-      <p>Developing XComb and related systems that bridge research ideas with practical platform implementation.</p>
-    </article>
-    <article class="home-update-card">
-      <h3>Ongoing Research</h3>
-      <p>Advancing work on blockchain-enabled federated learning and trustworthy decentralized computation.</p>
-    </article>
+  <div class="home-hero-card">
+    <h3>Open to Collaborate</h3>
+    <ul class="home-interest-list">
+      <li>Academic collaborations in blockchain systems, secure distributed computing, and federated learning.</li>
+      <li>Student projects, hackathons, workshops, and innovation-driven mentoring initiatives.</li>
+      <li>Invited talks, interdisciplinary research discussions, and institutional partnerships.</li>
+    </ul>
   </div>
 </section>
